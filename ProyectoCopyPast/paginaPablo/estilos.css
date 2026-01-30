@@ -1,4 +1,7 @@
-/* ARCHIVO: estilos.css */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
     color: white;
@@ -45,7 +48,7 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .grid-container {

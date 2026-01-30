@@ -3,62 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Perfil Pablo</title>
-    
     <link rel="stylesheet" href="estilos.css">
+    <style>
+        #pantalla-contacto {
+            display: none; 
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
     <div class="nav-container">
-        <a href="#" class="tab activo">Home</a>
-        <a href="#" class="tab">Mis Proyectos</a>
-        <a href="#" class="tab">Galería</a>
-        <a href="#" class="tab">Contacto</a>
-    </div>
-
-    <div class="hero-section">
-        <div style="flex: 2;">
-            <img src="foto-perfil.jpg" style="width: 300px; border: 1px solid #555; display: block; margin: 0 auto;">
-        </div>
-        <div style="flex: 1; padding-left: 20px;">
-            <h2 style="color: #ddd; text-transform: uppercase; font-size: 18px;">Sobre Mí</h2>
-            <ul style="font-size: 13px; color: #aaa; list-style-type: square;">
-                <li>Estudiante de IT</li>
-                <li>Fan de la Ciencia Ficción</li>
-                <li>Estilo: Retro & Tech</li>
-            </ul>
-            <a href="#" class="boton-rojo">VER PERFIL &gt;</a>
-        </div>
-    </div>
-
-    <div class="grid-container">
+        <a href="#" class="tab activo" onclick="mostrarHome(this)">Home</a>
+        <a href="#" class="tab" onclick="mostrarHome(this)">Galería</a>
         
-        <div class="glossy-box">
-            <h3>¿Qué hay de nuevo?</h3>
-            <p>Estoy aprendiendo a integrar iframes y mejorar mi CSS. ¡Mi perfil va tomando forma!</p>
-            <a href="#" style="color: skyblue; font-size: 11px;">leer más ></a>
-        </div>
-
-        <div class="glossy-box">
-            <h3>Mis Favoritos</h3>
-            <ul>
-                <li>Terminator 2</li>
-                <li>Programación Web</li>
-                <li>Estilo Y2K</li>
-            </ul>
-        </div>
-
-        <div class="glossy-box">
-            <h3>Contacto Rápido</h3>
-            <p>¿Tienes alguna duda sobre hardware? Envíame un mensaje.</p>
-            <button style="background: #333; color: white; border: 1px solid #666; padding: 5px;">Email Me</button>
-        </div>
-
-        <div class="glossy-box">
-            <h3>Mi Música 🎵</h3>
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUXHPhGNSJpL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-
+        <a href="#" class="tab" onclick="mostrarContacto(this)">Contacto</a>
     </div>
+
+    <div id="pantalla-home">
+        
+        <div class="hero-section">
+            <div style="flex: 2;">
+                <img src="foto-perfil.jpg" style="width: 300px; border: 1px solid #555; display: block; margin: 0 auto;">
+            </div>
+            <div style="flex: 1; padding-left: 20px;">
+                <h2 style="color: #ddd; text-transform: uppercase; font-size: 20px;">Sobre Mí</h2>
+                <ul style="font-size: 13px; color: #aaa; list-style-type: square;">
+                    <li>Estudiante de IT</li>
+                    <li>Fan de la Ciencia Ficción</li>
+                    <li>Estilo: Retro & Tech</li>
+                    <li>Reparación y mantenimiento de computadoras</li>
+                </ul>
+                <a href="#" class="boton-rojo">VER PERFIL ></a>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="glossy-box">
+                <h3>¿Qué hay de nuevo?</h3>
+                <p>Navegación mejorada: Ahora la sección de contacto es una pantalla independiente.</p>
+            </div>
+
+            <div class="glossy-box">
+                <h3>Mis Favoritos</h3>
+                <ul>
+                    <li>Terminator 2</li>
+                    <li>Programación Web</li>
+                    <li>Estilo Y2K</li>
+                </ul>
+            </div>
+
+            <div class="glossy-box">
+                <h3>Mi Música</h3>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="glossy-box">
+                <h3>Géneros</h3>
+                <ul>
+                    <li>IDM (Aphex Twin)</li>
+                    <li>Synthwave</li>
+                    <li>Rock Alternativo</li>
+                </ul>
+            </div> 
+        </div>
+
+    </div> <div id="pantalla-contacto">
+        
+        <h2 style="color: white; margin-bottom: 30px;">Selecciona una plataforma</h2>
+
+        <div class="glossy-box" style="max-width: 400px; margin: 0 auto;">
+            
+            <a href="https://wa.me/50212345678" target="_blank" style="text-decoration: none;">
+                <button style="width: 100%; margin-bottom: 15px; background: #25D366; color: white; border: 1px solid #128C7E; padding: 15px; cursor: pointer; font-weight: bold; font-size: 16px; border-radius: 5px;">
+                    Abrir WhatsApp
+                </button>
+            </a>
+
+            <a href="https://discord.gg/TU_CODIGO" target="_blank" style="text-decoration: none;">
+                <button style="width: 100%; margin-bottom: 15px; background: #5865F2; color: white; border: 1px solid #4752C4; padding: 15px; cursor: pointer; font-weight: bold; font-size: 16px; border-radius: 5px;">
+                    Ir a Discord
+                </button>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pablodrequena@gmail.com" target="_blank" style="text-decoration: none;">
+                <button style="width: 100%; background: #333; color: white; border: 1px solid #666; padding: 15px; cursor: pointer; font-weight: bold; font-size: 16px; border-radius: 5px;">
+                    Enviar Correo
+                </button>
+            </a>
+
+        </div>
+        
+        <p style="color: #666; font-size: 12px; margin-top: 20px;">Haz clic en "Home" para volver a ver mi perfil.</p>
+
+    </div> <script>
+        function mostrarHome(elemento) {
+            // 1. Mostrar la pantalla Home y Ocultar Contacto
+            document.getElementById('pantalla-home').style.display = 'block';
+            document.getElementById('pantalla-contacto').style.display = 'none';
+
+            actualizarPestañas(elemento);
+        }
+
+        function mostrarContacto(elemento) {
+            document.getElementById('pantalla-home').style.display = 'none';
+            document.getElementById('pantalla-contacto').style.display = 'block';
+
+            // 2. Arreglar las pestañas
+            actualizarPestañas(elemento);
+        }
+
+        function actualizarPestañas(elementoClickeado) {
+            // Quitar la clase 'activo' de todas las pestañas
+            const pestañas = document.querySelectorAll('.tab');
+            pestañas.forEach(p => p.classList.remove('activo'));
+            
+            // Ponérsela a la que dimos clic
+            elementoClickeado.classList.add('activo');
+        }
+    </script>
 
 </body>
 </html>
