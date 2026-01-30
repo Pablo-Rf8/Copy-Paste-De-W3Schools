@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+    background-color: blueviolet;
+}
+
+#txtBienvenida{
+    text-align: center;
+    color: rgb(67, 213, 221);
+}
+
+#txtSegundaBienvenida{
+    text-align: center;
+}
+
+#bobesponja{
+    
+    display: block;
+    margin-left: 410px;
+    margin-right: 400px;
+    width: 700px;
+    height: 300px;
+}
