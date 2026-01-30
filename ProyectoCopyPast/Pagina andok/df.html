@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chico Fuego y Niña Agua</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .personaje {
+            width: 250px;
+            padding: 20px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .fuego {
+            background-color: #e74c3c;
+        }
+
+        .agua {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 th:text="${titulo}"></h1>
+
+    <div class="contenedor">
+        <div class="personaje fuego">
+            <h2>🔥 Chico Fuego</h2>
+            <p th:text="${mensajeFuego}"></p>
+        </div>
+
+        <div class="personaje agua">
+            <h2>💧 Niña Agua</h2>
+            <p th:text="${mensajeAgua}"></p>
+        </div>
+    </div>
+
+</body>
+</html>
