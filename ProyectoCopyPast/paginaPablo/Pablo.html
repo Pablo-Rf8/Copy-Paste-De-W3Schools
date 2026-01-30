@@ -2,18 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Página con Imagen</title>
+    <title>Mi Perfil Pablo</title>
+    
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body style="background: linear-gradient(to bottom, #4facfe, #00f2fe); font-family: sans-serif; text-align: center; color: white;">
+<body>
 
-    <div style="margin-top: 50px;">
-        <h1>Mi Página con Imagen</h1>
-        <h2>Bienvenido a mi sitio</h2>
-        <p>A continuación:</p>
+    <div class="nav-container">
+        <a href="#" class="tab activo">Home</a>
+        <a href="#" class="tab">Mis Proyectos</a>
+        <a href="#" class="tab">Galería</a>
+        <a href="#" class="tab">Contacto</a>
+    </div>
 
-        <img src="foto-perfil.jpg" alt="Mi fotografía favorita" width="400" style="border-radius: 20px; border: 5px solid white;">
+    <div class="hero-section">
+        <div style="flex: 2;">
+            <img src="foto-perfil.jpg" style="width: 300px; border: 1px solid #555; display: block; margin: 0 auto;">
+        </div>
+        <div style="flex: 1; padding-left: 20px;">
+            <h2 style="color: #ddd; text-transform: uppercase; font-size: 18px;">Sobre Mí</h2>
+            <ul style="font-size: 13px; color: #aaa; list-style-type: square;">
+                <li>Estudiante de IT</li>
+                <li>Fan de la Ciencia Ficción</li>
+                <li>Estilo: Retro & Tech</li>
+            </ul>
+            <a href="#" class="boton-rojo">VER PERFIL &gt;</a>
+        </div>
+    </div>
 
-        <p>¡Hola!</p>
+    <div class="grid-container">
+        
+        <div class="glossy-box">
+            <h3>¿Qué hay de nuevo?</h3>
+            <p>Estoy aprendiendo a integrar iframes y mejorar mi CSS. ¡Mi perfil va tomando forma!</p>
+            <a href="#" style="color: skyblue; font-size: 11px;">leer más ></a>
+        </div>
+
+        <div class="glossy-box">
+            <h3>Mis Favoritos</h3>
+            <ul>
+                <li>Terminator 2</li>
+                <li>Programación Web</li>
+                <li>Estilo Y2K</li>
+            </ul>
+        </div>
+
+        <div class="glossy-box">
+            <h3>Contacto Rápido</h3>
+            <p>¿Tienes alguna duda sobre hardware? Envíame un mensaje.</p>
+            <button style="background: #333; color: white; border: 1px solid #666; padding: 5px;">Email Me</button>
+        </div>
+
+        <div class="glossy-box">
+            <h3>Mi Música 🎵</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUXHPhGNSJpL?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
     </div>
 
 </body>
